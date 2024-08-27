@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div id="timer-container">
+                <div id="timer-display">00:00:00</div>
+                <button id="start-timer">Start</button>
+                <button id="stop-timer">Stop</button>
+                <button id="reset-timer">Reset</button>
+                <button id="lap-timer">Lap</button>
+            </div>
+        </div>
+        <div class="header-center">
+            <h1>Informatica Office Dashboard</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="#pods">Pods</a></li>
+                <li><a href="#jenkins">Jenkins</a></li>
+                <li><a href="#workday">Workday</a></li>
+                <li><a href="#sso">SSO</a></li>
+                <li><a href="#confluence">Confluence</a></li>
+                <li><a href="#jira">Jira</a></li>
+                <li><a href="#notes">Online Notes</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Emails</h2>
+            <iframe src="https://outlook.office.com/mail/inbox" width="100%" height="500px" frameborder="0"></iframe>
+        </div>
+
+        <div class="section">
+            <h2>To-Do List</h2>
+            <ul id="todo-list">
+                <!-- To-Do items will appear here -->
+            </ul>
+            <input type="text" id="todo-input" placeholder="Add a new task...">
+            <button id="add-todo">Add</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
